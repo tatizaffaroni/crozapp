@@ -11,6 +11,9 @@ const cuota3 = urlParams.get('cuota3');
 const cuota4 = urlParams.get('cuota4');
 const cuota5 = urlParams.get('cuota5');
 const cuota6a12 = urlParams.get('cuota6a12');
+const tyc1 = urlParams.get('tyc1');
+const tyc2 = urlParams.get('tyc2');
+const tyc3 = urlParams.get('tyc3');
 const fecha = urlParams.get('fecha');
 
 
@@ -28,6 +31,9 @@ document.getElementById('cuota3').innerText = cuota3;
 document.getElementById('cuota4').innerText = cuota4;
 document.getElementById('cuota5').innerText = cuota5;
 document.getElementById('cuota6a12').innerText = cuota6a12;
+document.getElementById('tyc1').innerText = tyc1;
+document.getElementById('tyc2').innerText = tyc2;
+document.getElementById('tyc3').innerText = tyc3;
 document.getElementById('fecha').innerText= fecha;
 };
 
