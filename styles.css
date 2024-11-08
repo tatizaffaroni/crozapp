@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700');
 @import url('https://fonts.googleapis.com/css2?family=Puppies+Play');
 @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand');
 * { 
     margin: 0;
     padding: 0;
@@ -54,10 +55,10 @@ body {
     font-family: "Kalam", cursive;
     font-weight: 700;
     font-style: normal;
-    font-size: 32pt;
+    font-size: 40pt;
     align-content: center;
     text-align: center;
-    color: #404040;
+    color: #040404;
     text-transform: capitalize;
 }
 .subtitulo {
@@ -81,7 +82,7 @@ body {
     font-size: 28pt;
     align-content: center;
     text-align: center;
-    color: #202020;
+    color: #030303;
 }
 .diagnostico {
     padding-left: 2em;
@@ -119,13 +120,13 @@ body {
     text-align: center;
 }
 .tycc {
-    font-family: "Kalam";
+    font-family: Kalam;
     font-style: normal;
+    font-weight: bold;
     font-size: 22pt;
     align-content: center;
     text-align: left;
-    color: #f8f8f8;
-    text-shadow: 4px 4px 5px rgb(41, 41, 41);
+    color: #292929;
     
 }
 .firma {
@@ -143,7 +144,7 @@ body {
         0px 0px 7px rgba(0, 0, 0, 0.4);
 }
 .boton{
-    height: 6em;
+    height: 4em;
     font-size: 24px;
     font-weight: bold;
     background-color: #4CAF50;
