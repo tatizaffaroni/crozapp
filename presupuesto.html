@@ -5,10 +5,12 @@
         <title>Presupuesto de Ortopedia</title>
         <link rel="stylesheet" href="styles.css">
         <script src="presupuestoonload.js"></script>   
+        <script src="html2canvas.js"></script>   
     </head>
 
     <body>
         <button id="dl-png" class="boton">Descargar</button>
+        <script src="descargapng.js"></script>
         
         <section id="fotop" class="container">
             <section class="cabecera">
@@ -47,30 +49,14 @@
                         recambio de aparatología. Tendrá un nuevo presupuesto.
                     </li>
                     <li>No incluye pérdida o roturas del aparato.</li>
-                    <li id="fecha"></li>
                 </ul>
             </section>
-
+            
             <section class="pie">
                 <div class="firma">Dra. Cecilia Zaffaroni</div>
+                <div id="fecha" class="fecha"></div>
             </section>
         </section>
 
-     
-        <script src="html2canvas.js"></script>   
-        <script>
-            document.getElementById("dl-png").onclick = function() {
-                const screenshotTarget = document.getElementById('fotop');
-
-                html2canvas(screenshotTarget).then((canvas) => {
-                    const base64image = canvas.toDataURL("image/png");
-                    var anchor = document.createElement('a');
-                    anchor.setAttribute("href", base64image);
-                    anchor.setAttribute("download", "CROZ-Presupuesto");
-                    anchor.click();
-                    anchor.remove();
-                })
-            }
-        </script>
     </body>
 </html>

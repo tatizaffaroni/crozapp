@@ -30,3 +30,4 @@ document.getElementById('cuota5').innerText = cuota5;
 document.getElementById('cuota6a12').innerText = cuota6a12;
 document.getElementById('fecha').innerText= fecha;
 };
+
