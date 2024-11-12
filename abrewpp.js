@@ -14,13 +14,13 @@ document.getElementById("btnwpp").onclick = function () {
                 })
             ]).then(() => {
                 console.log('¡Imagen copiada al portapapeles!');
+                var anchor = document.createElement('a');
+                anchor.setAttribute("href", enlacewpp);
+                anchor.click();
+                anchor.remove();
             }).catch((error) => {
                 console.error('Error al copiar al portapapeles: ', error);
             });
         }, 'image/png');
     });
-    var anchor = document.createElement('a');
-    anchor.setAttribute("href", enlacewpp);
-    anchor.click();
-    anchor.remove();
 };
